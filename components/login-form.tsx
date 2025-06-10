@@ -79,9 +79,26 @@ export function LoginForm() {
   }
 
   // Função para login com Google (simulada)
-  const handleGoogleLogin = () => {
+  const handleGoogleLogin = async (e: React.FormEvent) => {
     console.log("Login com Google iniciado")
     // Aqui seria implementada a integração com Google OAuth
+    e.preventDefault()
+
+    try {
+      // Simular chamada de API
+      await new Promise((resolve) => setTimeout(resolve, 1500))
+
+      // Aqui seria implementada a lógica real de autenticação
+      console.log("Dados de login:", formData)
+
+      // Redirecionar para dashboard ou página principal após login bem-sucedido
+      router.push("/profile")
+    } catch (error) {
+      console.error("Erro no login:", error)
+      setErrors({ email: "Credenciais inválidas. Tente novamente." })
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
