@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+/* Estilos para alto contraste */
+body.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast header,
+body.high-contrast footer,
+body.high-contrast section {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.high-contrast a,
+body.high-contrast button {
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+body.high-contrast img {
+  filter: grayscale(100%) contrast(120%);
+}
+
+/* Estilos para foco acessível */
+:focus-visible {
+  outline: 3px solid #00a3a3;
+  outline-offset: 2px;
+}
+
+/* Classe para texto visível apenas para leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Transições suaves para rolagem */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Reduzir animações para usuários que preferem menos movimento */
+  .transition-all,
+  .transition-colors,
+  .transition-transform {
+    transition: none !important;
+  }
+}
+
+/* Animações personalizadas para as seções expansíveis */
+.expandable-content {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Melhorar a acessibilidade dos dropdowns */
+[aria-expanded="true"] + [role="menu"],
+[aria-expanded="true"] + .dropdown-menu {
+  display: block;
+}
+
+[aria-expanded="false"] + [role="menu"],
+[aria-expanded="false"] + .dropdown-menu {
+  display: none;
+}
+
+/* Estilos para melhorar a legibilidade */
+.container {
+  max-width: 1200px;
+}
+
+/* Garantir que os botões tenham tamanho mínimo para toque */
+button,
+.btn,
+a[role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Melhorar o contraste dos placeholders */
+::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+/* Estilos para estados de hover e focus mais acessíveis */
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px rgba(0, 163, 163, 0.5);
+}
+
+/* Garantir que as imagens sejam responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Evitar resetar todos os estilos dos elementos do VLibras */
+[vw]:not(.enabled):not([vw-access-button]) {
+  all: revert !important;
+}
