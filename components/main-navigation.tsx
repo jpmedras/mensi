@@ -56,14 +56,6 @@ export function MainNavigation() {
                 Fale Conosco
               </Link>
             </li>
-            <li>
-              <Link
-                href="/login"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              >
-                Entrar
-              </Link>
-            </li>
           </ul>
         </nav>
         {/* Contêiner para os botões Entrar e Criar Conta */}
