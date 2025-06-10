@@ -326,7 +326,7 @@ export function RegisterForm() {
 
                     {/* Tooltip */}
                     {showPasswordTooltip && (
-                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-800 text-white text-xs rounded-lg p-3 z-10">
+                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-800 text-white text-lg rounded-lg p-3 z-10">
                         <div className="space-y-1">
                           <p className="font-medium">Sua senha deve conter:</p>
                           <ul className="space-y-1">
