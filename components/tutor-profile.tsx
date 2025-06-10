@@ -181,7 +181,7 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
               {/* Calendário */}
               <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-gray-800 capitalize">{calendarData.monthName}</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">{calendarData.monthName}</h3>
                   <div className="flex gap-2">
                     <button className="p-2 hover:bg-gray-100 rounded-md">
                       <ChevronLeft size={16} />

@@ -25,6 +25,7 @@ interface ScheduleFormProps {
 export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleFormProps) {
   // Estados para controlar o formulário
   const [message, setMessage] = useState<string>("")
+  const [messageError, setMessageError] = useState<string>("")
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
   // Estados para controlar os modais
@@ -50,15 +51,25 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
     setShowCancelModal(false)
   }
 
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value)
+    if (messageError) {
+      setMessageError("")
+    }
+  }
+
   // Função para enviar o agendamento
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
     // Validação básica
     if (!message.trim()) {
-      alert("Por favor, escreva uma mensagem descrevendo sua dificuldade.")
+      setMessageError("Este campo deve ser preenchido")
       return
     }
+
+    // Limpar erro se passou na validação
+    setMessageError("")
 
     setIsLoading(true)
 
@@ -78,7 +89,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
       setShowSuccessModal(true)
     } catch (error) {
       console.error("Erro ao criar agendamento:", error)
-      alert("Erro ao criar agendamento. Tente novamente.")
+      setMessageError("Erro ao criar agendamento. Tente novamente.")
     } finally {
       setIsLoading(false)
     }
@@ -153,19 +164,22 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
 
           {/* Campo de mensagem */}
           <div className="mb-8">
-            <label htmlFor="message" className="sr-only">
-              Mensagem para a tutora
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+              Mensagem para a tutora <span className="text-red-500">*</span>
             </label>
             <textarea
               id="message"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={handleMessageChange}
               placeholder="Ex.: Minha maior dificuldade é a realização da multiplicação de fração."
               rows={8}
-              className="w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              className={`w-full p-4 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:border-transparent transition-colors ${
+                messageError ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-teal-500"
+              }`}
               aria-describedby="message-help"
               required
             />
+            {messageError && <p className="mt-1 text-sm text-red-600">{messageError}</p>}
             <p id="message-help" className="mt-2 text-sm text-gray-500">
               Descreva suas dificuldades para que a tutora possa se preparar melhor para a sessão.
             </p>
@@ -184,7 +198,6 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
 
             <button
               type="submit"
-              disabled={isLoading || !message.trim()}
               className="px-8 py-3 bg-teal-500 hover:bg-teal-600 disabled:bg-teal-300 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
             >
               {isLoading ? "Enviando..." : "Enviar"}
