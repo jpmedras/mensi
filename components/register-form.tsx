@@ -47,9 +47,9 @@ export function RegisterForm() {
   const [errors, setErrors] = useState<FormErrors>({})
 
   // Estados para controlar os modais
-  const [showGuardianInfoModal, setShowGuardianInfoModal] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
   const [showPasswordTooltip, setShowPasswordTooltip] = useState(false)
+  const [showGuardianTooltip, setShowGuardianTooltip] = useState(false)
 
   // Estado para verificar se o usuário é maior de idade
   const [isAdult, setIsAdult] = useState(false)
@@ -312,7 +312,7 @@ export function RegisterForm() {
                   Senha <span className="text-red-500">*</span>
                   <div className="relative ml-2">
                     <button
-                        className="m-0"
+                      className="m-0"
                       type="button"
                       onMouseEnter={() => setShowPasswordTooltip(true)}
                       onMouseLeave={() => setShowPasswordTooltip(false)}
@@ -321,12 +321,12 @@ export function RegisterForm() {
                       className="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-full"
                       aria-label="Informações sobre requisitos da senha"
                     >
-                      <HelpCircle size={16}/>
+                      <HelpCircle size={16} />
                     </button>
 
                     {/* Tooltip */}
                     {showPasswordTooltip && (
-                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-800 text-white text-lg rounded-lg p-3 z-10">
+                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-800 text-white text-base rounded-lg p-3 z-10">
                         <div className="space-y-1">
                           <p className="font-medium">Sua senha deve conter:</p>
                           <ul className="space-y-1">
@@ -380,14 +380,34 @@ export function RegisterForm() {
                   <>
                     <label htmlFor="guardianEmail" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                       E-mail do responsável <span className="text-red-500">*</span>
-                      <button
-                        type="button"
-                        onClick={() => setShowGuardianInfoModal(true)}
-                        className="ml-2 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-full"
-                        aria-label="Informações sobre e-mail do responsável"
-                      >
-                        <HelpCircle size={16} />
-                      </button>
+                      <div className="relative ml-2">
+                        <button
+                          className="m-0"
+                          type="button"
+                          onMouseEnter={() => setShowGuardianTooltip(true)}
+                          onMouseLeave={() => setShowGuardianTooltip(false)}
+                          onFocus={() => setShowGuardianTooltip(true)}
+                          onBlur={() => setShowGuardianTooltip(false)}
+                          className="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-full"
+                          aria-label="Informações sobre e-mail do responsável"
+                        >
+                          <HelpCircle size={16} />
+                        </button>
+
+                        {/* Tooltip */}
+                        {showGuardianTooltip && (
+                          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-800 text-white text-base rounded-lg p-3 z-10">
+                            <div className="space-y-1">
+                              <p>
+                                Para sua segurança, o seu responsável será solicitado por e-mail para autorizar algumas
+                                funcionalidades, como agendamento de tutorias.
+                              </p>
+                            </div>
+                            {/* Seta do tooltip */}
+                            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
+                          </div>
+                        )}
+                      </div>
                     </label>
                     <input
                       type="email"
@@ -478,30 +498,6 @@ export function RegisterForm() {
           </form>
         </div>
       </div>
-
-      {/* Modal de informações sobre e-mail do responsável */}
-      <Modal
-        isOpen={showGuardianInfoModal}
-        onClose={() => setShowGuardianInfoModal(false)}
-        title="Informações sobre e-mail do responsável"
-        className="max-w-md"
-      >
-        <div className="text-center">
-          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <HelpCircle size={32} className="text-blue-600" />
-          </div>
-          <p className="text-gray-700 mb-6">
-            Para sua segurança, o seu responsável será solicitado por e-mail para autorizar algumas funcionalidades,
-            como agendamento de tutorias.
-          </p>
-          <button
-            onClick={() => setShowGuardianInfoModal(false)}
-            className="w-full bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
-          >
-            Entendi
-          </button>
-        </div>
-      </Modal>
 
       {/* Modal de sucesso */}
       <Modal
