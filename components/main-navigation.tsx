@@ -66,12 +66,21 @@ export function MainNavigation() {
             </li>
           </ul>
         </nav>
-        <Link
-          href="/register"
-          className="hidden md:block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
-        >
-          Criar Conta
-        </Link>
+        {/* Contêiner para os botões Entrar e Criar Conta */}
+        <div className="hidden md:flex space-x-4"> {/* Adicionei 'space-x-4' para um espaçamento entre eles */}
+          <Link
+            href="/login"
+            className="border-2 border-teal-500 bg-transparent text-teal-500 hover:border-teal-600 hover:bg-teal-600 hover:text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+          >
+            Entrar
+          </Link>
+          <Link
+            href="/register"
+            className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+          >
+            Criar Conta
+          </Link>
+        </div>
 
         {/* Botão do menu mobile */}
         <button
