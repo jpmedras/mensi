@@ -68,7 +68,7 @@ export function MainNavigation() {
           </Link>
           <Link
             href="/register"
-            className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="hover:bg-teal-600 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 bg-cyan-800"
           >
             Criar Conta
           </Link>
