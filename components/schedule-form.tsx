@@ -190,7 +190,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
             <button
               type="button"
               onClick={handleCancel}
-              className="px-8 py-3 bg-rose-500 hover:bg-rose-600 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
+              className="px-8 py-3 bg-rose-600 hover:bg-rose-700 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2"
               disabled={isLoading}
             >
               Cancelar
@@ -198,7 +198,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
 
             <button
               type="submit"
-              className="px-8 py-3 bg-teal-500 hover:bg-teal-600 disabled:bg-teal-300 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="px-8 py-3 bg-teal-600 hover:bg-teal-700 disabled:bg-teal-400 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
             >
               {isLoading ? "Enviando..." : "Enviar"}
             </button>
@@ -219,13 +219,13 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button
               onClick={handleConfirmCancel}
-              className="px-6 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
+              className="px-6 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2"
             >
               Sim, cancelar
             </button>
             <button
               onClick={handleContinueScheduling}
-              className="px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+              className="px-6 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
             >
               Continuar agendando
             </button>
@@ -250,13 +250,13 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
           <div className="flex flex-col gap-3">
             <button
               onClick={handleGoToAppointments}
-              className="w-full px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="w-full px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
             >
               Ver meus agendamentos
             </button>
             <button
               onClick={handleGoToRepository}
-              className="w-full px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+              className="w-full px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
             >
               Ir para repositório
             </button>
