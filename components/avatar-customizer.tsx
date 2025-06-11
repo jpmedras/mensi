@@ -197,7 +197,7 @@ export function AvatarCustomizer() {
                 key={avatar.id}
                 onClick={() => handleAvatarSelection(avatar.id)}
                 className={`
-                  relative p-4 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
+                  relative p-4 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2
                   ${
                     selectedAvatar === avatar.id
                       ? `bg-white border-4 ${getAvatarBorderColor(avatar.id)} shadow-lg scale-105`
@@ -223,7 +223,7 @@ export function AvatarCustomizer() {
 
                 {/* Indicador de seleção */}
                 {selectedAvatar === avatar.id && (
-                  <div className="absolute top-2 right-2 bg-teal-500 rounded-full p-1">
+                  <div className="absolute top-2 right-2 bg-cyan-700 rounded-full p-1">
                     <Check size={16} className="text-white" />
                   </div>
                 )}
@@ -241,10 +241,10 @@ export function AvatarCustomizer() {
                 key={complement.id}
                 onClick={() => handleComplementSelection(complement.id)}
                 className={`
-                  relative p-4 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
+                  relative p-4 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2
                   ${
                     selectedComplement === complement.id
-                      ? "bg-white border-4 border-teal-400 shadow-lg scale-105"
+                      ? "bg-white border-4 border-cyan-600 shadow-lg scale-105"
                       : "bg-white border-2 border-gray-200 hover:border-gray-300 hover:shadow-md"
                   }
                 `}
@@ -267,7 +267,7 @@ export function AvatarCustomizer() {
 
                 {/* Indicador de seleção */}
                 {selectedComplement === complement.id && (
-                  <div className="absolute top-2 right-2 bg-teal-500 rounded-full p-1">
+                  <div className="absolute top-2 right-2 bg-cyan-700 rounded-full p-1">
                     <Check size={16} className="text-white" />
                   </div>
                 )}
@@ -331,13 +331,13 @@ export function AvatarCustomizer() {
             onClick={handleSaveChanges}
             disabled={isLoading || !selectedAvatar}
             className={`
-              flex items-center gap-2 px-8 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
+              flex items-center gap-2 px-8 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2
               ${
                 isSaved
                   ? "bg-green-500 text-white"
                   : isLoading
-                    ? "bg-teal-300 text-white cursor-not-allowed"
-                    : "bg-teal-500 hover:bg-teal-600 text-white"
+                    ? "bg-cyan-500 text-white cursor-not-allowed"
+                    : "bg-cyan-700 hover:bg-cyan-800 text-white"
               }
             `}
           >
@@ -380,7 +380,7 @@ export function AvatarCustomizer() {
           <div className="flex flex-col gap-3">
             <button
               onClick={handleGoToProfile}
-              className="w-full px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="w-full px-6 py-3 bg-cyan-700 hover:bg-cyan-800 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
             >
               Ir para meu perfil
             </button>

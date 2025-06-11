@@ -242,7 +242,7 @@ export function RegisterForm() {
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Digite seu nome completo"
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 transition-colors ${
                     errors.fullName ? "border-red-500" : "border-gray-300"
                   }`}
                   aria-describedby={errors.fullName ? "fullName-error" : undefined}
@@ -267,7 +267,7 @@ export function RegisterForm() {
                   onChange={handleBirthDateChange}
                   placeholder="Digite sua data de nascimento (dd/mm/aaaa)"
                   maxLength={10}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 transition-colors ${
                     errors.birthDate ? "border-red-500" : "border-gray-300"
                   }`}
                   aria-describedby={errors.birthDate ? "birthDate-error" : undefined}
@@ -294,7 +294,7 @@ export function RegisterForm() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Digite seu e-mail"
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 transition-colors ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   }`}
                   aria-describedby={errors.email ? "email-error" : undefined}
@@ -318,7 +318,7 @@ export function RegisterForm() {
                       onMouseLeave={() => setShowPasswordTooltip(false)}
                       onFocus={() => setShowPasswordTooltip(true)}
                       onBlur={() => setShowPasswordTooltip(false)}
-                      className="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-full"
+                      className="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-700 rounded-full"
                       aria-label="Informações sobre requisitos da senha"
                     >
                       <HelpCircle size={16} />
@@ -350,7 +350,7 @@ export function RegisterForm() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="Digite sua senha"
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors pr-12 ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 transition-colors pr-12 ${
                       errors.password ? "border-red-500" : "border-gray-300"
                     }`}
                     aria-describedby={errors.password ? "password-error" : undefined}
@@ -388,7 +388,7 @@ export function RegisterForm() {
                           onMouseLeave={() => setShowGuardianTooltip(false)}
                           onFocus={() => setShowGuardianTooltip(true)}
                           onBlur={() => setShowGuardianTooltip(false)}
-                          className="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-full"
+                          className="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-700 rounded-full"
                           aria-label="Informações sobre e-mail do responsável"
                         >
                           <HelpCircle size={16} />
@@ -416,7 +416,7 @@ export function RegisterForm() {
                       value={formData.guardianEmail}
                       onChange={handleChange}
                       placeholder="Digite o e-mail do seu responsável"
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 transition-colors ${
                         errors.guardianEmail ? "border-red-500" : "border-gray-300"
                       }`}
                       aria-describedby={errors.guardianEmail ? "guardianEmail-error" : undefined}
@@ -452,7 +452,7 @@ export function RegisterForm() {
                     value={formData.confirmPassword}
                     onChange={handleChange}
                     placeholder="Digite sua senha novamente"
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors pr-12 ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 transition-colors pr-12 ${
                       errors.confirmPassword ? "border-red-500" : "border-gray-300"
                     }`}
                     aria-describedby={errors.confirmPassword ? "confirmPassword-error" : undefined}
@@ -479,7 +479,7 @@ export function RegisterForm() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full max-w-xs bg-teal-500 hover:bg-teal-600 disabled:bg-teal-300 text-white py-3 px-8 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="w-full max-w-xs bg-cyan-700 hover:bg-cyan-800 disabled:bg-cyan-500 text-white py-3 px-8 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
               >
                 {isLoading ? "Cadastrando..." : "Cadastrar"}
               </button>
@@ -490,7 +490,7 @@ export function RegisterForm() {
               <span className="text-gray-600">Já possui uma conta? </span>
               <Link
                 href="/login"
-                className="text-teal-600 hover:text-teal-700 font-medium focus:outline-none focus:underline"
+                className="text-cyan-800 hover:text-cyan-900 font-medium focus:outline-none focus:underline"
               >
                 Entre
               </Link>
@@ -515,7 +515,7 @@ export function RegisterForm() {
           </p>
           <button
             onClick={handleGoToLogin}
-            className="w-full bg-teal-500 hover:bg-teal-600 text-white py-3 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="w-full bg-cyan-700 hover:bg-cyan-800 text-white py-3 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             Ir para tela de login
           </button>

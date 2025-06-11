@@ -55,12 +55,12 @@ export function ContactSection() {
 
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3">
-                <Mail className="text-teal-500" size={20} />
+                <Mail className="text-cyan-700" size={20} />
                 <span>contato@mensi.com</span>
               </div>
 
               <div className="flex items-start gap-3">
-                <MapPin className="text-teal-500" size={20} />
+                <MapPin className="text-cyan-700" size={20} />
                 <span>
                   Rua Intendente Humberto Campedelli, 1000
                   <br />
@@ -98,7 +98,7 @@ export function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   placeholder="Digite seu nome"
                 />
               </div>
@@ -114,7 +114,7 @@ export function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   placeholder="Digite seu telefone"
                 />
               </div>
@@ -130,7 +130,7 @@ export function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   placeholder="Digite seu e-mail"
                 />
               </div>
@@ -146,14 +146,14 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   placeholder="Descreva como podemos te ajudar"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="w-full bg-cyan-700 hover:bg-cyan-800 text-white py-3 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
               >
                 Enviar mensagem
               </button>

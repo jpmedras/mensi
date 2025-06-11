@@ -118,7 +118,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
         {/* Informações do tutor */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
           <div className="flex items-center gap-4 mb-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+            <div className="w-16 h-16 bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-full flex items-center justify-center text-white text-xl font-bold">
               {tutor.name.charAt(0)}
             </div>
             <div>
@@ -141,15 +141,15 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
           {/* Detalhes do agendamento */}
           <div className="flex flex-wrap gap-4 text-sm text-gray-600">
             <div className="flex items-center gap-2">
-              <Calendar size={16} className="text-teal-600" />
+              <Calendar size={16} className="text-cyan-800" />
               <span>{selectedDate}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Clock size={16} className="text-teal-600" />
+              <Clock size={16} className="text-cyan-800" />
               <span>{selectedTime} horas</span>
             </div>
             <div className="flex items-center gap-2">
-              <User size={16} className="text-teal-600" />
+              <User size={16} className="text-cyan-800" />
               <span>Sessão individual</span>
             </div>
           </div>
@@ -174,7 +174,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
               placeholder="Ex.: Minha maior dificuldade é a realização da multiplicação de fração."
               rows={8}
               className={`w-full p-4 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:border-transparent transition-colors ${
-                messageError ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-teal-500"
+                messageError ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-cyan-700"
               }`}
               aria-describedby="message-help"
               required
@@ -198,7 +198,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
 
             <button
               type="submit"
-              className="px-8 py-3 bg-teal-500 hover:bg-teal-600 disabled:bg-teal-300 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="px-8 py-3 bg-cyan-700 hover:bg-cyan-800 disabled:bg-cyan-500 text-white rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
             >
               {isLoading ? "Enviando..." : "Enviar"}
             </button>
@@ -250,7 +250,7 @@ export function ScheduleForm({ tutor, selectedDate, selectedTime }: ScheduleForm
           <div className="flex flex-col gap-3">
             <button
               onClick={handleGoToAppointments}
-              className="w-full px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="w-full px-6 py-3 bg-cyan-700 hover:bg-cyan-800 text-white rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
             >
               Ver meus agendamentos
             </button>

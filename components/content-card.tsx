@@ -95,7 +95,7 @@ export function ContentCard({ content }: ContentCardProps) {
         <div className="flex-shrink-0 ml-4">
           <button
             onClick={handleDownload}
-            className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 flex items-center gap-2"
+            className="bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 flex items-center gap-2"
             aria-label={`${getButtonText()} ${content.title}`}
           >
             {content.type === "video" ? <Play size={16} /> : <Download size={16} />}

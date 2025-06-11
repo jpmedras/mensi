@@ -32,7 +32,7 @@ export default function AppointmentsPageClient() {
           <div className="mb-6">
             <a
               href="/tutors"
-              className="inline-flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="inline-flex items-center px-6 py-3 bg-cyan-800 hover:bg-cyan-900 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
             >
               Encontre um tutor
             </a>

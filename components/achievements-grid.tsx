@@ -176,7 +176,7 @@ export function AchievementsGrid() {
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Suas Estatísticas</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="text-center">
-            <div className="text-2xl font-bold text-teal-600">{unlockedAchievements.length}</div>
+            <div className="text-2xl font-bold text-cyan-800">{unlockedAchievements.length}</div>
             <div className="text-sm text-gray-600">Conquistas Desbloqueadas</div>
           </div>
           <div className="text-center">

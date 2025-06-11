@@ -189,7 +189,7 @@ export function AppointmentsCalendar() {
           <thead>
             <tr>
               {weekDays.map((day, index) => (
-                <th key={index} className="p-4 text-center border text-teal-600 font-medium">
+                <th key={index} className="p-4 text-center border text-cyan-800 font-medium">
                   {day}
                 </th>
               ))}
@@ -212,7 +212,7 @@ export function AppointmentsCalendar() {
                           <div className="h-full">
                             {/* Número do dia */}
                             <div className="text-right mb-1">
-                              <span className="text-teal-600 font-medium">{day}</span>
+                              <span className="text-cyan-800 font-medium">{day}</span>
                             </div>
 
                             {/* Agendamento (se houver) */}
@@ -225,7 +225,7 @@ export function AppointmentsCalendar() {
                                   {appointment.tutorName} às {appointment.time.substring(0, 5)}h
                                 </div>
                                 <button
-                                  className="text-teal-600 text-xs hover:underline focus:outline-none focus:underline"
+                                  className="text-cyan-800 text-xs hover:underline focus:outline-none focus:underline"
                                   onClick={(e) => {
                                     e.stopPropagation()
                                     openAppointmentDetails(appointment)
@@ -256,7 +256,7 @@ export function AppointmentsCalendar() {
           <p className="text-gray-600 mb-4">Você não possui agendamentos para este mês. Que tal agendar uma tutoria?</p>
           <a
             href="/tutors"
-            className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="inline-block bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             Encontrar tutores
           </a>

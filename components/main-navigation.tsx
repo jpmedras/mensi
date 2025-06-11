@@ -27,7 +27,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#sobre-nos"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
               >
                 Sobre Nós
               </Link>
@@ -35,7 +35,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#recomendacoes"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
               >
                 Recomendações
               </Link>
@@ -43,7 +43,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#tutores"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
               >
                 Nossos Tutores
               </Link>
@@ -51,7 +51,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#contato"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
               >
                 Fale Conosco
               </Link>
@@ -62,13 +62,13 @@ export function MainNavigation() {
         <div className="hidden md:flex space-x-4"> {/* Adicionei 'space-x-4' para um espaçamento entre eles */}
           <Link
             href="/login"
-            className="border-2 border-teal-500 bg-transparent text-teal-500 hover:border-teal-600 hover:bg-teal-600 hover:text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="border-2 border-cyan-700 bg-transparent text-cyan-700 hover:border-cyan-800 hover:bg-cyan-800 hover:text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             Entrar
           </Link>
           <Link
             href="/register"
-            className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             Criar Conta
           </Link>
@@ -93,7 +93,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#sobre-nos"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Sobre Nós
@@ -102,7 +102,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#recomendacoes"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Recomendações
@@ -111,7 +111,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#tutores"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Nossos Tutores
@@ -120,7 +120,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#contato"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Fale Conosco
@@ -129,7 +129,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="/login"
-                  className="block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="block bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Entrar
@@ -138,7 +138,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="/register"
-                  className="block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="block bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Criar Conta

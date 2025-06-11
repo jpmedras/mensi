@@ -161,7 +161,7 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
                     <ul className="space-y-1">
                       {specialty.items.map((item, itemIndex) => (
                         <li key={itemIndex} className="text-gray-700 text-sm flex items-start">
-                          <span className="text-teal-600 mr-2">•</span>
+                          <span className="text-cyan-800 mr-2">•</span>
                           {item}
                         </li>
                       ))}
@@ -216,13 +216,13 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
                         onClick={() => handleDateSelection(date)}
                         disabled={isDisabled}
                         className={`
-                          p-2 text-sm rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-teal-500
-                          ${isDisabled ? "text-gray-300 cursor-not-allowed" : "hover:bg-teal-50 cursor-pointer"}
+                          p-2 text-sm rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-cyan-700
+                          ${isDisabled ? "text-gray-300 cursor-not-allowed" : "hover:bg-cyan-200 cursor-pointer"}
                           ${
                             isSelected
-                              ? "bg-teal-500 text-white"
+                              ? "bg-cyan-700 text-white"
                               : isToday
-                                ? "bg-teal-100 text-teal-800 font-semibold"
+                                ? "bg-cyan-300 text-cyan-900 font-semibold"
                                 : isCurrentMonth
                                   ? "text-gray-700"
                                   : "text-gray-300"
@@ -252,10 +252,10 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
                       <button
                         key={time}
                         onClick={() => handleTimeSelection(time)}
-                        className={`px-6 py-3 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 ${
+                        className={`px-6 py-3 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 ${
                           selectedTime === time
-                            ? "bg-teal-600 text-white shadow-md"
-                            : "bg-teal-500 hover:bg-teal-600 text-white"
+                            ? "bg-cyan-800 text-white shadow-md"
+                            : "bg-cyan-700 hover:bg-cyan-800 text-white"
                         }`}
                         aria-label={`Agendar sessão às ${time} do dia ${selectedDate}`}
                       >
@@ -286,7 +286,7 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
             <div className="w-full lg:w-auto">
               <button
                 onClick={handleSendMessage}
-                className="w-full lg:w-auto bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 flex items-center justify-center gap-2"
+                className="w-full lg:w-auto bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 flex items-center justify-center gap-2"
                 aria-label={`Enviar mensagem para ${tutor.name}`}
               >
                 <MessageSquare size={20} />

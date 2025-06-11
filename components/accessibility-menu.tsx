@@ -54,7 +54,7 @@ export function AccessibilityMenu() {
           <li>
             <Link
               href="#conteudo"
-              className="hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-700"
               onClick={(e) => {
                 e.preventDefault()
                 document.getElementById("conteudo")?.focus()
@@ -67,7 +67,7 @@ export function AccessibilityMenu() {
           <li>
             <Link
               href="#menu"
-              className="hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-700"
               onClick={(e) => {
                 e.preventDefault()
                 document.getElementById("menu")?.focus()
@@ -80,7 +80,7 @@ export function AccessibilityMenu() {
           <li>
             <Link
               href="#rodape"
-              className="hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-700"
               onClick={(e) => {
                 e.preventDefault()
                 document.getElementById("rodape")?.focus()
@@ -93,7 +93,7 @@ export function AccessibilityMenu() {
           <li>
             <Link
               href="#acessibilidade"
-              className="hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-700"
             >
               Ir à acessibilidade [4]
             </Link>
@@ -104,21 +104,21 @@ export function AccessibilityMenu() {
           <button
             onClick={increaseFontSize}
             aria-label="Aumentar tamanho da fonte"
-            className="focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="focus:outline-none focus:ring-2 focus:ring-cyan-700"
           >
             A+ <span className="sr-only">Aumentar tamanho da fonte</span>
           </button>
           <button
             onClick={decreaseFontSize}
             aria-label="Diminuir tamanho da fonte"
-            className="focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="focus:outline-none focus:ring-2 focus:ring-cyan-700"
           >
             A- <span className="sr-only">Diminuir tamanho da fonte</span>
           </button>
           <button
             onClick={toggleHighContrast}
             aria-label="Alternar alto contraste"
-            className="focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="focus:outline-none focus:ring-2 focus:ring-cyan-700"
           >
             Alto contraste
           </button>

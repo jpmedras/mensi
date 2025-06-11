@@ -56,7 +56,7 @@ export function Modal({ isOpen, onClose, title, children, className = "" }: Moda
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-md"
+            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 rounded-md"
             aria-label="Fechar modal"
           >
             <X size={24} />

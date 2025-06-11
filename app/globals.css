@@ -105,7 +105,7 @@ body.high-contrast .bg-white,
 body.high-contrast .bg-gray-50,
 body.high-contrast .bg-gray-100,
 body.high-contrast .bg-gray-200,
-body.high-contrast .bg-teal-500,
+body.high-contrast .bg-cyan-700,
 body.high-contrast .bg-blue-500 {
   background-color: #000000 !important;
 }
@@ -116,7 +116,7 @@ body.high-contrast .text-gray-800,
 body.high-contrast .text-gray-900,
 body.high-contrast .text-black,
 body.high-contrast .text-white,
-body.high-contrast .text-teal-500,
+body.high-contrast .text-cyan-700,
 body.high-contrast .text-blue-500 {
   color: #ffff00 !important;
 }

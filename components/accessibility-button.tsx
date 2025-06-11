@@ -24,7 +24,7 @@ export function AccessibilityButton() {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-label="Menu de acessibilidade"
-        className="bg-teal-500 hover:bg-teal-600 text-white p-3 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+        className="bg-cyan-700 hover:bg-cyan-800 text-white p-3 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
       >
         <Accessibility size={24} />
       </button>
@@ -37,7 +37,7 @@ export function AccessibilityButton() {
             <li>
               <Link
                 href="#conteudo"
-                className="block hover:text-teal-600 focus:outline-none focus:text-teal-600"
+                className="block hover:text-cyan-800 focus:outline-none focus:text-cyan-800"
                 onClick={() => {
                   document.getElementById("conteudo")?.focus()
                   document.getElementById("conteudo")?.scrollIntoView({ behavior: "smooth" })
@@ -50,7 +50,7 @@ export function AccessibilityButton() {
             <li>
               <Link
                 href="#menu"
-                className="block hover:text-teal-600 focus:outline-none focus:text-teal-600"
+                className="block hover:text-cyan-800 focus:outline-none focus:text-cyan-800"
                 onClick={() => {
                   document.getElementById("menu")?.focus()
                   document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })
@@ -63,7 +63,7 @@ export function AccessibilityButton() {
             <li>
               <Link
                 href="#rodape"
-                className="block hover:text-teal-600 focus:outline-none focus:text-teal-600"
+                className="block hover:text-cyan-800 focus:outline-none focus:text-cyan-800"
                 onClick={() => {
                   document.getElementById("rodape")?.focus()
                   document.getElementById("rodape")?.scrollIntoView({ behavior: "smooth" })

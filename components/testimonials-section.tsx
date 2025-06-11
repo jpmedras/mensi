@@ -12,7 +12,7 @@ export function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Depoimento 1 */}
-          <div className="border border-teal-200 rounded-lg p-6 relative">
+          <div className="border border-cyan-400 rounded-lg p-6 relative">
             <div className="text-gray-700 mb-4">
               "A Mensi realmente fez a diferença na minha preparação para o vestibular. A qualidade, a variedade de
               cursos e a interação com os professores são pontos que realmente fazem a diferença no meu aprendizado."
@@ -21,7 +21,7 @@ export function TestimonialsSection() {
           </div>
 
           {/* Depoimento 2 */}
-          <div className="border border-teal-200 rounded-lg p-6 relative">
+          <div className="border border-cyan-400 rounded-lg p-6 relative">
             <div className="text-gray-700 mb-4">
               "É incrível como a plataforma me ajudou nos estudos e a focar no que eu realmente precisava melhorar. Os
               tutores são atenciosos e explicam de um jeito simples e direto. Isso mudou o jogo!"
@@ -30,7 +30,7 @@ export function TestimonialsSection() {
           </div>
 
           {/* Depoimento 3 */}
-          <div className="border border-teal-200 rounded-lg p-6 relative">
+          <div className="border border-cyan-400 rounded-lg p-6 relative">
             <div className="text-gray-700 mb-4">
               "Antes eu tinha muita dificuldade com matérias diferentes, mas com a plataforma consegui traçar um caminho
               claro. O suporte dos tutores foi crucial e fez toda a diferença na minha confiança e notas!"

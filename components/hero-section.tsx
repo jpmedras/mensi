@@ -39,7 +39,7 @@ export function HeroSection() {
             <div className="pt-4 text-center md:text-left">
               <Link
                 href="/login"
-                className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="inline-block bg-cyan-700 hover:bg-cyan-800 text-white px-8 py-3 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
               >
                 Começar agora
               </Link>

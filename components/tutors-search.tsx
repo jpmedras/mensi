@@ -178,7 +178,7 @@ export function TutorsSearch() {
                 id="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-700 bg-white"
                 aria-label="Selecione uma disciplina"
               >
                 <option value="">Selecione uma disciplina</option>
@@ -214,7 +214,7 @@ export function TutorsSearch() {
                 value={tutorName}
                 onChange={(e) => setTutorName(e.target.value)}
                 placeholder="Digite o nome do tutor"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-700"
               />
               <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                 <Search size={20} className="text-gray-400" />
@@ -234,7 +234,7 @@ export function TutorsSearch() {
                 id="level"
                 value={level}
                 onChange={(e) => setLevel(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-700 bg-white"
                 aria-label="Selecione um nível de ensino"
               >
                 <option value="">Selecione um nível</option>
@@ -268,7 +268,7 @@ export function TutorsSearch() {
                 id="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-700 bg-white"
                 aria-label="Selecione um horário disponível"
               >
                 <option value="">Selecione um horário</option>
@@ -320,7 +320,7 @@ export function TutorsSearch() {
                 <p className="text-gray-600 mb-4">Nenhum tutor encontrado com os filtros selecionados.</p>
                 <button
                   onClick={clearFilters}
-                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="inline-block bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                 >
                   Limpar filtros
                 </button>
@@ -332,7 +332,7 @@ export function TutorsSearch() {
               <div className="mt-8 text-center">
                 <button
                   onClick={handleShowAllTutors}
-                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="inline-block bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-3 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                 >
                   Exibir todos os tutores
                 </button>

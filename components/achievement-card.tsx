@@ -64,7 +64,7 @@ export function AchievementCard({ achievement, onClick }: AchievementCardProps) 
     <button
       onClick={onClick}
       className={`
-        relative w-full p-4 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
+        relative w-full p-4 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2
         ${
           achievement.isUnlocked
             ? `${getCategoryColor()} hover:scale-105 shadow-sm hover:shadow-md`
@@ -107,7 +107,7 @@ export function AchievementCard({ achievement, onClick }: AchievementCardProps) 
         <div className="mt-2">
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-teal-500 h-2 rounded-full transition-all duration-300"
+              className="bg-cyan-700 h-2 rounded-full transition-all duration-300"
               style={{
                 width: `${(achievement.progress.current / achievement.progress.total) * 100}%`,
               }}

@@ -55,7 +55,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
     switch (appointment.status) {
       case "scheduled":
         return {
-          icon: <Calendar size={20} className="text-teal-600" />,
+          icon: <Calendar size={20} className="text-cyan-800" />,
           text: "Agendado",
           className: "bg-sky-100 text-sky-800",
         }
@@ -101,7 +101,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-md"
+            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 rounded-md"
             aria-label="Fechar modal"
           >
             <X size={24} />
@@ -121,14 +121,14 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
             {/* Tutor */}
             <div className="flex items-start gap-3">
               <div className="flex-shrink-0 mt-1">
-                <User size={20} className="text-teal-600" />
+                <User size={20} className="text-cyan-800" />
               </div>
               <div>
                 <p className="font-medium">Tutor(a)</p>
                 <p className="text-gray-700">
                   <a
                     href={`/tutors/${appointment.tutorId}`}
-                    className="text-teal-600 hover:underline focus:outline-none focus:underline"
+                    className="text-cyan-800 hover:underline focus:outline-none focus:underline"
                   >
                     {appointment.tutorName}
                   </a>
@@ -139,7 +139,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
             {/* Data */}
             <div className="flex items-start gap-3">
               <div className="flex-shrink-0 mt-1">
-                <Calendar size={20} className="text-teal-600" />
+                <Calendar size={20} className="text-cyan-800" />
               </div>
               <div>
                 <p className="font-medium">Data</p>
@@ -150,7 +150,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
             {/* Horário */}
             <div className="flex items-start gap-3">
               <div className="flex-shrink-0 mt-1">
-                <Clock size={20} className="text-teal-600" />
+                <Clock size={20} className="text-cyan-800" />
               </div>
               <div>
                 <p className="font-medium">Horário</p>
@@ -161,7 +161,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
             {/* Disciplina */}
             <div className="flex items-start gap-3">
               <div className="flex-shrink-0 mt-1">
-                <BookOpen size={20} className="text-teal-600" />
+                <BookOpen size={20} className="text-cyan-800" />
               </div>
               <div>
                 <p className="font-medium">Disciplina</p>
@@ -175,7 +175,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
             {appointment.status === "scheduled" && (
               <>
                 <button
-                  className="flex-1 bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="flex-1 bg-cyan-700 hover:bg-cyan-800 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                   onClick={() => {
                     // Aqui seria implementada a lógica para entrar na aula
                     console.log("Entrar na aula:", appointment.id)
@@ -199,7 +199,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
 
             {appointment.status === "completed" && (
               <button
-                className="flex-1 bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="flex-1 bg-cyan-700 hover:bg-cyan-800 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                 onClick={() => {
                   // Aqui seria implementada a lógica para avaliar a aula
                   console.log("Avaliar aula:", appointment.id)
@@ -212,7 +212,7 @@ export function AppointmentModal({ isOpen, onClose, appointment }: AppointmentMo
 
             {appointment.status === "canceled" && (
               <button
-                className="flex-1 bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="flex-1 bg-cyan-700 hover:bg-cyan-800 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                 onClick={() => {
                   // Aqui seria implementada a lógica para reagendar
                   console.log("Reagendar aula:", appointment.id)

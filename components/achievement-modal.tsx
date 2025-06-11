@@ -100,7 +100,7 @@ export function AchievementModal({ isOpen, onClose, achievement }: AchievementMo
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-md"
+            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 rounded-md"
             aria-label="Fechar modal"
           >
             <X size={24} />
@@ -176,7 +176,7 @@ export function AchievementModal({ isOpen, onClose, achievement }: AchievementMo
               </div>
               <div className="w-full bg-gray-200 rounded-full h-3">
                 <div
-                  className="bg-teal-500 h-3 rounded-full transition-all duration-300"
+                  className="bg-cyan-700 h-3 rounded-full transition-all duration-300"
                   style={{
                     width: `${(achievement.progress.current / achievement.progress.total) * 100}%`,
                   }}
@@ -215,7 +215,7 @@ export function AchievementModal({ isOpen, onClose, achievement }: AchievementMo
                   console.log("Navegar para ação:", achievement.id)
                   onClose()
                 }}
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="w-full bg-cyan-700 hover:bg-cyan-800 text-white py-2 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
               >
                 Começar agora
               </button>
