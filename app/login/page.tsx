@@ -10,7 +10,7 @@ export default function LoginPage() {
       {/* Menu de acessibilidade - mesmo da landing page */}
       <AccessibilityMenu />
 
-      {/* Header simplificado para login */}
+      {/* Header simplificado para login  */}
       <LoginHeader />
 
       {/* Conteúdo principal da página de login */}
