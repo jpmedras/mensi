@@ -189,7 +189,7 @@ export function RepositorySearch() {
                 id="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-800 bg-white"
                 aria-label="Selecione uma disciplina"
               >
                 <option value="">Selecione uma disciplina</option>
@@ -221,7 +221,7 @@ export function RepositorySearch() {
                 id="grade"
                 value={grade}
                 onChange={(e) => setGrade(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-800 bg-white"
                 aria-label="Selecione uma série"
               >
                 <option value="">Selecione uma série</option>
@@ -253,7 +253,7 @@ export function RepositorySearch() {
                 id="category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-800 bg-white"
                 aria-label="Selecione um tipo de conteúdo"
               >
                 <option value="">Selecione um conteúdo</option>
@@ -305,7 +305,7 @@ export function RepositorySearch() {
                 <p className="text-gray-600 mb-4">Nenhum conteúdo encontrado com os filtros selecionados.</p>
                 <button
                   onClick={clearFilters}
-                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="inline-block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
                 >
                   Limpar filtros
                 </button>
@@ -335,8 +335,8 @@ export function RepositorySearch() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-500">
               <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-2">
-                  <svg className="w-6 h-6 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-2">
+                  <svg className="w-6 h-6 text-cyan-800" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -344,8 +344,8 @@ export function RepositorySearch() {
                 <span>Com respostas explicadas</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-2">
-                  <svg className="w-6 h-6 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-2">
+                  <svg className="w-6 h-6 text-cyan-800" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V4a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -353,8 +353,8 @@ export function RepositorySearch() {
                 <span>Aulas explicativas</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-2">
-                  <svg className="w-6 h-6 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-2">
+                  <svg className="w-6 h-6 text-cyan-800" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"

@@ -60,8 +60,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                 <Link
                   href="/profile"
                   className={`flex items-center gap-2 ${
-                    isActive("perfil") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                    isActive("perfil") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                  } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                 >
                   <User size={20} />
                   Perfil
@@ -71,8 +71,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                 <Link
                   href="/tutors"
                   className={`flex items-center gap-2 ${
-                    isActive("tutores") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                    isActive("tutores") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                  } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                 >
                   <GraduationCap size={20} />
                   Tutores
@@ -82,8 +82,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                 <Link
                   href="#"
                   className={`flex items-center gap-2 ${
-                    isActive("comunidade") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                    isActive("comunidade") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                  } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                 >
                   <Users size={20} />
                   Comunidade
@@ -93,8 +93,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                 <Link
                   href="/repository"
                   className={`flex items-center gap-2 ${
-                    isActive("repositorio") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                    isActive("repositorio") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                  } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                 >
                   <BookOpen size={20} />
                   Repositório
@@ -104,8 +104,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                 <Link
                   href="#"
                   className={`flex items-center gap-2 ${
-                    isActive("mensagens") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                    isActive("mensagens") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                  } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                 >
                   <MessageSquare size={20} />
                   Mensagens
@@ -118,7 +118,7 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
           <div className="hidden lg:block relative">
             <button
               onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
-              className="flex items-center gap-2 text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="flex items-center gap-2 text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
               aria-expanded={isAccountMenuOpen}
               aria-haspopup="true"
             >
@@ -175,8 +175,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                   <Link
                     href="/profile"
                     className={`flex items-center gap-2 ${
-                      isActive("perfil") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                    } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                      isActive("perfil") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                    } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <User size={20} />
@@ -187,8 +187,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                   <Link
                     href="/tutors"
                     className={`flex items-center gap-2 ${
-                      isActive("tutores") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                    } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                      isActive("tutores") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                    } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <GraduationCap size={20} />
@@ -199,8 +199,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                   <Link
                     href="#"
                     className={`flex items-center gap-2 ${
-                      isActive("comunidade") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                    } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                      isActive("comunidade") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                    } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Users size={20} />
@@ -211,8 +211,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                   <Link
                     href="/repository"
                     className={`flex items-center gap-2 ${
-                      isActive("repositorio") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                    } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                      isActive("repositorio") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                    } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <BookOpen size={20} />
@@ -223,8 +223,8 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                   <Link
                     href="#"
                     className={`flex items-center gap-2 ${
-                      isActive("mensagens") ? "text-teal-600 font-medium" : "text-gray-800 hover:text-teal-600"
-                    } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                      isActive("mensagens") ? "text-cyan-800 font-medium" : "text-gray-800 hover:text-cyan-800"
+                    } focus:outline-none focus:ring-2 focus:ring-cyan-800`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <MessageSquare size={20} />
@@ -234,7 +234,7 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                 <li className="pt-4 border-t border-gray-300">
                   <Link
                     href="/profile/settings"
-                    className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Configurações
@@ -246,7 +246,7 @@ export function ProfileHeader({ activeItem }: ProfileHeaderProps) {
                       console.log("Logout")
                       setIsMenuOpen(false)
                     }}
-                    className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
                   >
                     Sair
                   </button>

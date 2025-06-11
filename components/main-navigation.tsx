@@ -12,12 +12,12 @@ export function MainNavigation() {
     <header className="bg-sky-100 py-4" id="menu" tabIndex={-1}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <Image 
+          <Image
             src="/images/logo_2.png"
-            alt="A imagem é um logotipo com a palavra 'MENSI' escrita em letras maiúsculas e arredondadas, de cor azul. A última letra 'I' é substituída por um lápis desenhado de forma divertida e humanizada.Esse lápis tem olhos grandes, um sorriso simpático e está usando uma borracha rosa no topo, como se fosse um chapéu. A ponta do lápis está apontada para baixo, como se estivesse escrevendo. Abaixo dele, há uma linha ondulada preta, sugerindo que ele acabou de escrever 'me ensina'" 
-            width={120} 
-            height={40} 
-            priority 
+            alt="A imagem é um logotipo com a palavra 'MENSI' escrita em letras maiúsculas e arredondadas, de cor azul. A última letra 'I' é substituída por um lápis desenhado de forma divertida e humanizada.Esse lápis tem olhos grandes, um sorriso simpático e está usando uma borracha rosa no topo, como se fosse um chapéu. A ponta do lápis está apontada para baixo, como se estivesse escrevendo. Abaixo dele, há uma linha ondulada preta, sugerindo que ele acabou de escrever 'me ensina'"
+            width={120}
+            height={40}
+            priority
           />
         </Link>
 
@@ -27,7 +27,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#sobre-nos"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
               >
                 Sobre Nós
               </Link>
@@ -35,7 +35,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#recomendacoes"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
               >
                 Recomendações
               </Link>
@@ -43,7 +43,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#tutores"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
               >
                 Nossos Tutores
               </Link>
@@ -51,7 +51,7 @@ export function MainNavigation() {
             <li>
               <Link
                 href="#contato"
-                className="text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
               >
                 Fale Conosco
               </Link>
@@ -59,16 +59,16 @@ export function MainNavigation() {
           </ul>
         </nav>
         {/* Contêiner para os botões Entrar e Criar Conta */}
-        <div className="hidden md:flex space-x-4"> {/* Adicionei 'space-x-4' para um espaçamento entre eles */}
+        <div className="hidden md:flex space-x-4">
           <Link
             href="/login"
-            className="border-2 border-teal-500 bg-transparent text-teal-500 hover:border-teal-600 hover:bg-teal-600 hover:text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="border-2 border-cyan-800 bg-transparent text-cyan-800 hover:border-cyan-900 hover:bg-cyan-900 hover:text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
           >
             Entrar
           </Link>
           <Link
             href="/register"
-            className="hover:bg-teal-600 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 bg-cyan-800"
+            className="hover:bg-cyan-900 text-white px-6 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2 bg-cyan-800"
           >
             Criar Conta
           </Link>
@@ -93,7 +93,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#sobre-nos"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Sobre Nós
@@ -102,7 +102,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#recomendacoes"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Recomendações
@@ -111,7 +111,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#tutores"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Nossos Tutores
@@ -120,7 +120,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="#contato"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block text-gray-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-800"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Fale Conosco
@@ -129,7 +129,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="/login"
-                  className="block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Entrar
@@ -138,7 +138,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="/register"
-                  className="block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Criar Conta

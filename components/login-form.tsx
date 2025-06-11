@@ -141,7 +141,7 @@ export function LoginForm() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Digite seu e-mail"
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800 transition-colors ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   }`}
                   aria-describedby={errors.email ? "email-error" : undefined}
@@ -166,7 +166,7 @@ export function LoginForm() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="Digite sua senha"
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors pr-12 ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800 transition-colors pr-12 ${
                       errors.password ? "border-red-500" : "border-gray-300"
                     }`}
                     aria-describedby={errors.password ? "password-error" : undefined}
@@ -191,7 +191,7 @@ export function LoginForm() {
               <div className="text-right">
                 <Link
                   href="/forgot-password"
-                  className="text-sm text-teal-600 hover:text-teal-700 focus:outline-none focus:underline"
+                  className="text-sm text-cyan-800 hover:text-cyan-900 focus:outline-none focus:underline"
                 >
                   Esqueceu a senha?
                 </Link>
@@ -201,7 +201,7 @@ export function LoginForm() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-teal-500 hover:bg-teal-600 disabled:bg-teal-300 text-white py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="w-full bg-cyan-800 hover:bg-cyan-900 disabled:bg-cyan-600 text-white py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
               >
                 {isLoading ? "Entrando..." : "Entrar"}
               </button>
@@ -211,7 +211,7 @@ export function LoginForm() {
                 <span className="text-gray-600">Não possui uma conta? </span>
                 <Link
                   href="/register"
-                  className="text-teal-600 hover:text-teal-700 font-medium focus:outline-none focus:underline"
+                  className="text-cyan-800 hover:text-cyan-900 font-medium focus:outline-none focus:underline"
                 >
                   Cadastre-se
                 </Link>

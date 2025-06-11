@@ -33,7 +33,8 @@ const tutorsData: Tutor[] = [
     id: "giovana-mattos",
     name: "Giovana Mattos",
     image: "/images/tutora-giovana.png",
-    description: "Uma mulher em pé contra um fundo azul-acinzentado. Ela está sorrindo de forma confiante e amigável, com os braços cruzados sobre o peito. Sua pele é escura, e ela tem cabelos pretos, cacheados e volumosos, na altura dos ombros. Ela está vestindo uma camisa de manga longa azul-escura. A expressão no rosto transmite simpatia, segurança e profissionalismo. ",
+    description:
+      "Uma mulher em pé contra um fundo azul-acinzentado. Ela está sorrindo de forma confiante e amigável, com os braços cruzados sobre o peito. Sua pele é escura, e ela tem cabelos pretos, cacheados e volumosos, na altura dos ombros. Ela está vestindo uma camisa de manga longa azul-escura. A expressão no rosto transmite simpatia, segurança e profissionalismo. ",
     title: "Mestranda",
     institution: "USP",
     subjects: ["Química", "Física", "Matemática"],
@@ -42,7 +43,8 @@ const tutorsData: Tutor[] = [
     id: "alberto-souza",
     name: "Alberto Souza",
     image: "/images/tutor-alberto.png",
-    description: "Um homem jovem em pé, ao ar livre, com um prédio moderno e vegetação ao fundo. Ele está sorrindo de maneira confiante e simpática, com os braços cruzados na frente do corpo. Tem pele escura, cabelos curtos e bem aparados. Está vestindo um blazer bege claro sobre uma camisa preta",
+    description:
+      "Um homem jovem em pé, ao ar livre, com um prédio moderno e vegetação ao fundo. Ele está sorrindo de maneira confiante e simpática, com os braços cruzados na frente do corpo. Tem pele escura, cabelos curtos e bem aparados. Está vestindo um blazer bege claro sobre uma camisa preta",
     title: "Doutorando",
     institution: "UFSCAR",
     subjects: ["Biologia", "Português", "Inglês"],
@@ -51,7 +53,8 @@ const tutorsData: Tutor[] = [
     id: "carlos-silva",
     name: "Carlos Silva",
     image: "/images/tutor-carlos.jpg",
-    description: "Um homem jovem com expressão de leve sorriso e ar confiante. Ele tem barba e bigode bem cheios, cabelo curto e escuro. Está vestindo uma camisa xadrez em tons de azul-marinho e branco, sob um blazer azul-escuro com textura. O fundo é totalmente branco.",
+    description:
+      "Um homem jovem com expressão de leve sorriso e ar confiante. Ele tem barba e bigode bem cheios, cabelo curto e escuro. Está vestindo uma camisa xadrez em tons de azul-marinho e branco, sob um blazer azul-escuro com textura. O fundo é totalmente branco.",
     title: "Professor",
     institution: "UNICAMP",
     subjects: ["História", "Geografia", "Sociologia"],
@@ -60,7 +63,8 @@ const tutorsData: Tutor[] = [
     id: "mariana-costa",
     name: "Mariana Costa",
     image: "/images/tutora-mariana.jpg",
-    description:"Uma jovem mulher sorridente em frente a um fundo branco. Ela tem pele clara, cabelos longos, lisos e escuros, e está com os fios soltos, caindo sobre os ombros. Seus olhos são escuros e ela exibe um sorriso largo, transmitindo simpatia e confiança. Veste uma camiseta azul-clara e está posicionada de forma central na imagem, com os braços parcialmente visíveis. A iluminação é uniforme, destacando seu rosto de maneira suave.",
+    description:
+      "Uma jovem mulher sorridente em frente a um fundo branco. Ela tem pele clara, cabelos longos, lisos e escuros, e está com os fios soltos, caindo sobre os ombros. Seus olhos são escuros e ela exibe um sorriso largo, transmitindo simpatia e confiança. Veste uma camiseta azul-clara e está posicionada de forma central na imagem, com os braços parcialmente visíveis. A iluminação é uniforme, destacando seu rosto de maneira suave.",
     title: "Especialista",
     institution: "UFMG",
     subjects: ["Literatura", "Redação", "Gramática"],
@@ -178,7 +182,7 @@ export function TutorsSearch() {
                 id="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-800 bg-white"
                 aria-label="Selecione uma disciplina"
               >
                 <option value="">Selecione uma disciplina</option>
@@ -214,7 +218,7 @@ export function TutorsSearch() {
                 value={tutorName}
                 onChange={(e) => setTutorName(e.target.value)}
                 placeholder="Digite o nome do tutor"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
               />
               <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                 <Search size={20} className="text-gray-400" />
@@ -234,7 +238,7 @@ export function TutorsSearch() {
                 id="level"
                 value={level}
                 onChange={(e) => setLevel(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-800 bg-white"
                 aria-label="Selecione um nível de ensino"
               >
                 <option value="">Selecione um nível</option>
@@ -256,8 +260,6 @@ export function TutorsSearch() {
             </div>
           </div>
 
-          <div className="text-center text-gray-500 my-4">ou</div>
-
           {/* Filtro por horário disponível */}
           <div className="mb-6">
             <label htmlFor="time" className="block text-gray-700 font-medium mb-2">
@@ -268,7 +270,7 @@ export function TutorsSearch() {
                 id="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
+                className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-cyan-800 bg-white"
                 aria-label="Selecione um horário disponível"
               >
                 <option value="">Selecione um horário</option>
@@ -307,10 +309,10 @@ export function TutorsSearch() {
       <div className="lg:col-span-2">
         {showResults && (
           <>
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Resultados da busca:</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Tutores disponíveis:</h2>
 
             {filteredTutors.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <div className="space-y-6">
                 {filteredTutors.map((tutor) => (
                   <TutorCard key={tutor.id} tutor={tutor} />
                 ))}
@@ -320,21 +322,21 @@ export function TutorsSearch() {
                 <p className="text-gray-600 mb-4">Nenhum tutor encontrado com os filtros selecionados.</p>
                 <button
                   onClick={clearFilters}
-                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="inline-block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
                 >
                   Limpar filtros
                 </button>
               </div>
             )}
 
-            {/* Botão para exibir todos os tutores */}
-            {!showAllTutors && filteredTutors.length > 0 && filteredTutors.length < tutorsData.length && (
+            {/* Botão para mostrar todos os tutores */}
+            {!showAllTutors && filteredTutors.length > 0 && (
               <div className="mt-8 text-center">
                 <button
                   onClick={handleShowAllTutors}
-                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="inline-block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
                 >
-                  Exibir todos os tutores
+                  Ver todos os tutores
                 </button>
               </div>
             )}

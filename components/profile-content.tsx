@@ -153,7 +153,7 @@ export function ProfileContent() {
             <h1 className="text-2xl font-bold text-gray-800">Adenilson, bem vindo!</h1>
             <Link
               href="/profile/avatar"
-              className="text-teal-600 hover:text-teal-700 text-sm focus:outline-none focus:underline"
+              className="text-cyan-800 hover:text-cyan-900 text-sm focus:outline-none focus:underline"
             >
               Gerenciar avatar
             </Link>
@@ -164,14 +164,14 @@ export function ProfileContent() {
         <div className="flex flex-wrap gap-3">
           <Link
             href="/profile/appointments"
-            className="flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="flex items-center gap-2 bg-cyan-800 hover:bg-cyan-900 text-white px-4 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
           >
             <Calendar size={18} />
             Meus agendamentos
           </Link>
           <Link
             href="/profile/achievements"
-            className="flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="flex items-center gap-2 bg-cyan-800 hover:bg-cyan-900 text-white px-4 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
           >
             <Award size={18} />
             Minhas conquistas
@@ -183,14 +183,14 @@ export function ProfileContent() {
       <div className="flex justify-center gap-4 mb-6">
         <button
           onClick={expandAllSections}
-          className="text-teal-600 hover:text-teal-700 focus:outline-none focus:underline"
+          className="text-cyan-800 hover:text-cyan-900 focus:outline-none focus:underline"
         >
           Abrir todos os painéis
         </button>
         <span className="text-gray-400">|</span>
         <button
           onClick={collapseAllSections}
-          className="text-teal-600 hover:text-teal-700 focus:outline-none focus:underline"
+          className="text-cyan-800 hover:text-cyan-900 focus:outline-none focus:underline"
         >
           Ocultar todos os painéis
         </button>
@@ -208,7 +208,7 @@ export function ProfileContent() {
             <p className="text-gray-600 mb-4">Poxa! Por enquanto você ainda não tem nenhum tutor.</p>
             <Link
               href="/tutors"
-              className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="inline-block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
             >
               Encontre um tutor
             </Link>
@@ -225,7 +225,7 @@ export function ProfileContent() {
             <p className="text-gray-600 mb-4">Você ainda não participa de nenhuma comunidade.</p>
             <Link
               href="/community"
-              className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="inline-block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
             >
               Explorar comunidades
             </Link>
@@ -242,7 +242,7 @@ export function ProfileContent() {
             <p className="text-gray-600 mb-4">Nenhum material foi visualizado recentemente.</p>
             <Link
               href="/repository"
-              className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="inline-block bg-cyan-800 hover:bg-cyan-900 text-white px-6 py-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
             >
               Explorar repositório
             </Link>
