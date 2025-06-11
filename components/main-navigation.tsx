@@ -129,7 +129,7 @@ export function MainNavigation() {
               <li>
                 <Link
                   href="/login"
-                  className="block text-gray-800 hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="block bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Entrar
