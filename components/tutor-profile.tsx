@@ -183,10 +183,10 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-semibold text-gray-800">{calendarData.monthName}</h3>
                   <div className="flex gap-2">
-                    <button className="p-2 hover:bg-gray-100 rounded-md">
+                    <button className="p-2 hover:bg-gray-100 rounded-md" aria-label="Mês anterior">
                       <ChevronLeft size={16} />
                     </button>
-                    <button className="p-2 hover:bg-gray-100 rounded-md">
+                    <button className="p-2 hover:bg-gray-100 rounded-md" aria-label="Próxiom mês">
                       <ChevronRight size={16} />
                     </button>
                   </div>
