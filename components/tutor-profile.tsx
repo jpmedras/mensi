@@ -186,7 +186,7 @@ export function TutorProfile({ tutor }: TutorProfileProps) {
                     <button className="p-2 hover:bg-gray-100 rounded-md" aria-label="Mês anterior">
                       <ChevronLeft size={16} />
                     </button>
-                    <button className="p-2 hover:bg-gray-100 rounded-md" aria-label="Próxiom mês">
+                    <button className="p-2 hover:bg-gray-100 rounded-md" aria-label="Próximo mês">
                       <ChevronRight size={16} />
                     </button>
                   </div>

@@ -170,7 +170,7 @@ export function AppointmentsCalendar() {
           className="p-2 hover:bg-amber-400 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500"
           aria-label="Mês anterior"
         >
-          <ChevronLeft size={24}  />
+          <ChevronLeft size={24} />
         </button>
         <h2 className="text-xl font-bold text-gray-800">{formatMonthYear(currentDate)}</h2>
         <button
